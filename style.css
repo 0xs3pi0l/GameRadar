@@ -1,0 +1,157 @@
+/* || GENERAL STYLES */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #13315c;
+}
+
+h2 {
+    color: #eef4ed;
+    font-family: Bebas Neue;
+}
+
+h3, h4, p {
+    color: #eef4ed; 
+    font-family: Bebas Neue;
+    margin: 0.3em;
+}
+
+/*.....*/
+
+/* || NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #0b2545;
+}
+
+.navbar__div {
+    display: flex;
+    gap: 1em;
+}
+
+.navbar__div__logo {
+    height: 2.5em;
+    margin: 1em;
+    margin-left: 3em;
+}
+
+.navbar__div__title {
+    margin-top: 1em;
+}
+
+/* || POPULAR GAMES SECTION */
+
+.popular-games-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.games-container__cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-games-container__cards-container__card__text {
+    background-color: #1c4886;
+    border: 1px solid #255ead;
+}
+
+.popular-games-container__cards-container__card__cover {
+    height: 350px;
+}
+
+/* || RECENTLY REVIEWED GAMES SECTION */
+
+.stacked {
+    display: grid;
+}
+
+.stacked > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.recently-reviewed-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 3em;
+}
+
+.recently-reviewed-container__cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5em;
+    grid-template-columns: repeat(3, minmax(15em, 1fr));
+}
+
+.recently-reviewed-container__cards-container__card {
+    aspect-ratio: 1 / 1.1;
+    margin-bottom: 1em;
+}
+
+.recently-reviewed-container__cards-container__card__cover {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.recently-reviewed-container__cards-container__card__text {
+    align-self: end;
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: #1c4886;
+}
+
+/* || LOWER CONTAINER */
+
+.lower-container {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+
+.lower-container-column__game-item {
+    display: flex;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.lower-container-column h2 {
+    margin-bottom: 1em;
+}
+
+.lower-container-column__game-item img {
+    width: 10%;
+}
+
+/* || FOOTER */ 
+
+footer {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+footer p {
+    margin-left: 0;
+}
+
+/* || OTHER */
+
+.popular-games-container {
+    margin-top: 3em;
+}
