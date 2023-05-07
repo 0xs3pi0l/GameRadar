@@ -21,8 +21,6 @@ h3, h4, p {
     margin: 0.3em;
 }
 
-/*.....*/
-
 /* || NAVBAR */
 
 .navbar {
@@ -55,6 +53,7 @@ h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    margin-top: 3em;
 }
 
 .games-container__cards-container {
@@ -119,8 +118,11 @@ h3, h4, p {
 }
 
 @media (max-width: 600px) {
-    .recently-reviewed-container__cards-container { grid-template-columns: repeat(2, 1fr); }
-  }
+    .recently-reviewed-container__cards-container { 
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
 
 @media (max-width: 300px) {
     .recently-reviewed-container__cards-container { grid-template-columns: repeat(1, 1fr); }
@@ -152,6 +154,7 @@ h3, h4, p {
 @media (max-width: 600px) {
     .lower-container {
         flex-direction: column;
+    }
 }
 
 /* || FOOTER */ 
@@ -166,8 +169,3 @@ footer p {
     margin-left: 0;
 }
 
-/* || OTHER */
-
-.popular-games-container {
-    margin-top: 3em;
-}
