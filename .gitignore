@@ -1,2 +1,4 @@
 #Secret folder
 .secret/
+#Other stuff
+.query.txt
