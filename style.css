@@ -72,7 +72,7 @@ h3, h4, p {
     height: 350px;
 }
 
-/* || RECENTLY REVIEWED GAMES SECTION */
+/* || HIGHEST RATED GAMES SECTION */
 
 .stacked {
     display: grid;
@@ -83,7 +83,7 @@ h3, h4, p {
     grid-row: 1 / 2;
 }
 
-.recently-reviewed-container {
+.highest-rated-container {
     width: 70%;
     margin: 0 auto;
     display: flex;
@@ -92,7 +92,7 @@ h3, h4, p {
     margin-top: 3em;
 }
 
-.recently-reviewed-container__cards-container {
+.highest-rated-container__cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr;
@@ -100,17 +100,17 @@ h3, h4, p {
     grid-template-columns: repeat(3, minmax(10em, 1fr));
 }
 
-.recently-reviewed-container__cards-container__card {
+.highest-rated-container__cards-container__card {
     aspect-ratio: 1 / 1.1;
     margin-bottom: 1em;
 }
 
-.recently-reviewed-container__cards-container__card__cover {
+.highest-rated-container__cards-container__card__cover {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
-.recently-reviewed-container__cards-container__card__text {
+.highest-rated-container__cards-container__card__text {
     align-self: end;
     padding: 0.5em;
     margin: 0.5em;
@@ -118,14 +118,14 @@ h3, h4, p {
 }
 
 @media (max-width: 600px) {
-    .recently-reviewed-container__cards-container { 
+    .highest-rated-container__cards-container { 
         grid-template-columns: repeat(2, 1fr)
     }
 }
 
 
 @media (max-width: 300px) {
-    .recently-reviewed-container__cards-container { grid-template-columns: repeat(1, 1fr); }
+    .highest-rated-container__cards-container { grid-template-columns: repeat(1, 1fr); }
 }
 
 /* || LOWER CONTAINER */
