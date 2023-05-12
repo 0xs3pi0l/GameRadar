@@ -13,14 +13,21 @@ async function fetchData(url, query) {
     return json;
 }
 
-function insertPopularGames(){
+async function insertPopularGames(){
   let popularGamesCards = document.getElementsByClassName("games-container__cards-container__card");
-  let query = "fields name,release_dates.date,hypes; where release_dates.date > 1673084012 & hypes > 80; limit 5;";
+  let query = "fields name,release_dates.date,hypes,genres.name,cover.url; where release_dates.date > 1672541102 & hypes > 80; limit 5;";
   let url = `http://localhost:8080/https://api.igdb.com:443/v4/games/`
-  fetchData(url, query).then((response) => {
-    console.log(popularGamesCards);
-  })
-
+  let jsonData = await fetchData(url, query);
+  let gameCoverUrl;
+  
+  for(let i = 0; i < 5; i++){
+    console.log(popularGamesCards[i].childNodes[3].childNodes[3]);
+    gameCoverUrl = jsonData[i].cover.url.replace("t_thumb", "t_cover_big");
+    gameCoverUrl = `https:${gameCoverUrl}`
+    popularGamesCards[i].childNodes[1].src = gameCoverUrl;
+    popularGamesCards[i].childNodes[3].childNodes[1].innerText = jsonData[i].name;
+    popularGamesCards[i].childNodes[3].childNodes[3].innerText = jsonData[i].genres[0].name;
+  }
 
 }
 

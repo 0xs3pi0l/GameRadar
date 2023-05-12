@@ -1,1 +1,1 @@
-fields name,release_dates.date,hypes; where release_dates.date > 1673084012 & hypes > 80; limit 5;
+fields name,release_dates.date,hypes,genres.name,cover.url; where release_dates.date > 1673084012 & hypes > 80; limit 5;
