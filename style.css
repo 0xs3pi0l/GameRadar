@@ -135,6 +135,7 @@ h3, h4, p {
     width: 70%;
     margin: 0 auto;
     margin-top: 1.5em;
+    justify-content: space-between;
 }
 
 .lower-container-column__game-item {
