@@ -62,7 +62,6 @@ async function insertLowerContent(){
       lowerColumns[i].childNodes[3 + 2*j].childNodes[3].childNodes[1].innerText = jsonData[j].name;
       lowerColumns[i].childNodes[3 + 2*j].childNodes[3].childNodes[3].innerText = jsonData[j].release_dates[0].human;
     }
-   
   }
 }
 
