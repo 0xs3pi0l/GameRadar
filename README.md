@@ -6,4 +6,9 @@ New things learnt
 - CSS grids
 - Responsive design
 - Async/await
-
+- Basic javascript syntax
+- Javascript events
+- Event listeners
+- Promises
+- Basic DOM manipulation
+- Fetch API
