@@ -3,8 +3,8 @@ async function fetchData(url, query) {
       method: "POST",  
       headers: {
         "Content-Type" : "text/plain",
-        "Client-ID" : "xsw674khdtlg95mmk12786dh50co8a",
-        "Authorization" : "Bearer bqwnfzfqqolnlgsl9ap6wq24pfg8lj",
+        "Client-ID" : "CLIENT_ID",
+        "Authorization" : "Bearer TOKEN",
         "Origin" : "null"
       },
       body: query,
